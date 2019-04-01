@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="Keywords" content="Html Css JavaScript" />
+        <link rel="stylesheet" href="style/mystyle.css" /> 
+    </head>
+    <body>
+            <nav>
+                <div class="innernav">
+                    <!--<a href="index.html">Login</a> -->
+                    <a href="registration.html">Registration</a>
+                    <a href="product.html">Product</a>
+                    <!--<a href="profilepage.html">Profile</a>
+                    <a href="purchasepage.html">Purchase</a> -->
+                </div>
+            </nav>
+        <p><h1>Registration Page</h1></p>
+        <form action="profilepage.html" >
+        <div id="regtopleft">
+            Username: <br>
+            <input type="text" name="username" minlength="5" maxlength="25" required ><br>
+            Password: <br>
+            <input type="password" name="password" minlength="5" maxlength="13" required ><br>
+            <label>First name: </label><br>
+            <input type="text" name="firstname" maxlength="25" required><br>
+            <label>last name: </label><br>
+            <input type="text" name="lastname" maxlength="25" required>
+        </div>
+        <div id="regtopright">
+            Address: <br>
+            <input type="text" name="address" ><br>
+            City: <br>
+            <input type="text" name="city" maxlength="20" required><br>
+            State: <br>
+            <input type="text" name="state" maxlength="2" required><br>
+            Zipcode: <br>
+            <input type="number" name="zipcode" maxlength="5" required><br>
+        </div>
+        <div id="divmiddle" >
+            <label>Email: </label><br>
+            <input type="text" name="email" required><br>
+            <label>Date of Birth: </label><br>
+            <input type="date" name="bday" maxlength="8" max="03-29-2001" required><br>
+        </div>
+        <div id="pulldown">
+            <label>Marital Status: </label><br>
+            <input type="checkbox" name="Married" >Married
+            <input type="checkbox" name="Single">Single
+            <input type="checkbox" name="Separated">Separated
+            <input type="checkbox" name="Divorce">Divorce<br> 
+               
+            Profession: <br>
+            <select name="Profession" size="3">
+                <option value="Student" >Student</option>
+                <option value="Full-time Employment" >Full-time Employment</option>
+                <option value="Professional" >Professional</option>
+                <option value="Self-employed" >Self-employed</option>
+            </select><br>
+            <label>Own which of these: </label><br>
+            <input type="checkbox" name="devices" value="Mobile">Mobile</input>
+            <input type="checkbox" name="devices" value="tablet">tablet</input>
+            <input type="checkbox" name="devices" value="desktop">desktop</input>
+            <input type="checkbox" name="devices" value="laptop">laptop</input>
+        </div>
+        <a href="profilepage.html">
+            <button type="submit">Submit</button>
+        </a> 
+        <a href="registration.html">
+            <button type="reset">Reset</button>
+        </a>
+     </form>   
+    </body>
+</html>

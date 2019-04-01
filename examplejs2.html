@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function add() {
+            var x= Number(document.getElementById("txtx").value);
+            var y= Number(document.getElementById("txty").value);
+            var z= x + y;
+            /*alert(z); */
+            document.getElementById("divResult").innerHTML = z;
+
+        }
+        /* can also be done like this 
+        function add() {
+            var x= 10;
+            var y= 15;
+            var z= x+y;
+            alert(z);
+        }
+        */
+        </script>
+    </head>
+    <body>
+        <label>x: </label>
+        <input type="text" id="txtx" />
+        <br>
+        <label>y: </label>
+        <input type="text" id="txty" />
+        <br>
+        <button onclick="add();">Add</button>
+        <br>
+        <label>result</label>
+        <div id="divResult">
+            
+        </div>
+    </body>
+</html>

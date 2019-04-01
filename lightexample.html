@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+        function showFullname() {
+            var fName= document.getElementById("fName").value;
+            var lName= document.getElementById("lName").value;
+            var name= (fName + " " + lName);
+            document.getElementById("fullname").innerHTML=name;
+        }
+        </script>
+    </head>
+    <body>
+        <!--<img src="lighton.png" id="lighton" />
+        <button onclick="document.getElementById('lighton').src='lightoff.jpg';">
+        click
+        </button>
+        <button onclick="document.getElementById('lightoff').src='lighton.png';" >
+        </button> -->
+
+    <label>Firstname: </label>
+    <input type="text" id="fName" />
+    <br>
+    <label>Lastname: </label>
+    <input type="text" id="lName" />
+    <br>
+    <button onclick="showFullname();"> Show </button>
+    <br>
+    <p id="fullname"></p>
+    </body>
+</html>
